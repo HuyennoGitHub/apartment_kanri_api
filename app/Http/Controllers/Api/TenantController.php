@@ -38,7 +38,7 @@ class TenantController extends Controller
      */
     public function update(Request $request, Tenant $tenant)
     {
-        //
+        return $tenant->update($request->all());
     }
 
     /**
